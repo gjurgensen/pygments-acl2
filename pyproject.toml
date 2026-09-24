@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygments-acl2"
+version = "0.1.0"
+description = "Pygments lexer for ACL2"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Grant Jurgensen" }]
+dependencies = ["pygments"]
+
+[project.urls]
+Repository = "https://github.com/gjurgensen/pygments-acl2"
+
+[project.entry-points."pygments.lexers"]
+acl2 = "pygments_acl2:ACL2Lexer"
+
+[tool.setuptools]
+py-modules = ["pygments_acl2"]
