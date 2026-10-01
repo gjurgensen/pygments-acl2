@@ -2,3 +2,7 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+example/*.aux
+example/*.log
+example/*.pdf
+example/_minted-*/

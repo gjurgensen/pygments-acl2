@@ -2,6 +2,8 @@
 
 A [Pygments](https://pygments.org/) lexer for [ACL2](https://acl2.org).
 
+![Example ACL2 code highlighted with minted](example/example.png)
+
 ## Install
 
 ```bash

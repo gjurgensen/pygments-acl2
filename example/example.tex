@@ -1,0 +1,11 @@
+% Renders example.lisp with the lexer, producing the image in the README:
+%   pdflatex -shell-escape example.tex
+%   pdftoppm -r 200 -png -singlefile example.pdf example
+\documentclass[border=8pt]{standalone}
+\usepackage{minted}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{minipage}{8.2cm}
+\inputminted[fontsize=\small]{../pygments_acl2.py:ACL2Lexer -x}{example.lisp}
+\end{minipage}
+\end{document}
